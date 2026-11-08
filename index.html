@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>C++ Lab · OIJ — 56 zadań</title><meta name="theme-color" content="#0b1221"></head>
+<body style="margin:0;background:#0b1221;color:#edf3ff;font:16px system-ui,sans-serif;min-height:100vh;display:grid;place-items:center">
+<main id="loading" role="status" aria-live="polite">Otwieranie 56 zadań C++…</main>
+<script type="text/plain" id="site-payload"><!--DATA--></script>
+<script type="module">
+try {
+ const encoded=document.getElementById('site-payload').textContent.trim();
+ const binary=atob(encoded);
+ const bytes=new Uint8Array(binary.length);
+ for(let i=0;i<binary.length;i++)bytes[i]=binary.charCodeAt(i);
+ const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+ const html=await new Response(stream).text();
+ document.open();document.write(html);document.close();
+} catch(err) { document.getElementById('loading').textContent='Nie można otworzyć materiałów. Spróbuj zaktualizować przeglądarkę (Chrome, Firefox lub Safari).';console.error(err); }
+</script>
+</body></html>
